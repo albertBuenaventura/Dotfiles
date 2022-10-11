@@ -54,12 +54,22 @@ return require('packer').startup(function(use)
     config = "require('null-ls-config')"
   })
   -- themes
-  use 'folke/tokyonight.nvim'
-  use 'sainnhe/sonokai'
+  -- use 'folke/tokyonight.nvim'
+  -- use 'sainnhe/sonokai'
+  use {
+	  "catppuccin/nvim",
+	  as = "catppuccin",
+	  config = function()
+		  vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+		  require("catppuccin").setup()
+		  vim.api.nvim_command "colorscheme catppuccin"
+	  end
+  }
 
   use 'folke/which-key.nvim'
 
   use 'ggandor/lightspeed.nvim'
+ 
   -- Automatically set up your configuration after cloning packer.nvim
   --
   --
