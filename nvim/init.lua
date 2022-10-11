@@ -1,11 +1,13 @@
 require("plugins")
-require("keybindings")
+require("keybindings-config")
 require("treesitter-config")
 require("lualine-config")
 require("neotree-config")
 require("bufferline-config")
 require("cmp-config")
-require("whichkey-config")
+require("which-key-config")
+require("null-ls-config")
+require("lspsaga-config")
 
 vim.wo.number = true
 vim.opt.termguicolors = true

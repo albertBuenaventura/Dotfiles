@@ -46,13 +46,9 @@ return require('packer').startup(function(use)
   use({
     "glepnir/lspsaga.nvim",
     branch = "main",
-    config = "require('lspsaga-config')"
   })
   
-  use({
-    "jose-elias-alvarez/null-ls.nvim",
-    config = "require('null-ls-config')"
-  })
+  use 'jose-elias-alvarez/null-ls.nvim'
   -- themes
   -- use 'folke/tokyonight.nvim'
   -- use 'sainnhe/sonokai'
