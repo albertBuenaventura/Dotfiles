@@ -6,9 +6,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function(use)
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
   use {'goolord/alpha-nvim',requires = { 'kyazdani42/nvim-web-devicons' }, config = function () require'alpha'.setup(require'alpha.themes.startify'.config) end}
   use { 'ibhagwan/fzf-lua', requires = { 'kyazdani42/nvim-web-devicons' }}  
 
@@ -65,7 +62,8 @@ return require('packer').startup(function(use)
   use 'folke/which-key.nvim'
 
   use 'ggandor/lightspeed.nvim'
- 
+
+  use "terrortylor/nvim-comment"
   -- Automatically set up your configuration after cloning packer.nvim
   --
   --

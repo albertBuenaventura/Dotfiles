@@ -8,6 +8,7 @@ require("cmp-config")
 require("which-key-config")
 require("null-ls-config")
 require("lspsaga-config")
+require("comment-config")
 
 vim.wo.number = true
 vim.opt.termguicolors = true
