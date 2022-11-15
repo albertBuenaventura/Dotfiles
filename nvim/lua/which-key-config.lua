@@ -6,6 +6,7 @@ local mappings = {
   x = {":bdelete<cr>", "Close current buffer"},
   f = {":Telescope find_files<cr>", "Find Files"},
   r = {":Telescope live_grep<cr>", "Live grep"},
+  tr = {":Telescope resume<cr>", "Resume Telescope"},
 }
 
 local opts = {prefix =  '<leader>'}
