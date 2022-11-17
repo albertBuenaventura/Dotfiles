@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
     'f-person/git-blame.nvim'
   }
 
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
   -- use({
   --   "glepnir/lspsaga.nvim",
   --   branch = "main",
