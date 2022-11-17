@@ -40,6 +40,11 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- git
+  use {
+    'f-person/git-blame.nvim'
+  }
+
   -- use({
   --   "glepnir/lspsaga.nvim",
   --   branch = "main",
