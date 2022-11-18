@@ -4,9 +4,10 @@ local mappings = {
   Q = {":wq<cr>", "Save and Quit"},
   w = {":w<cr>", "Save"},
   x = {":bdelete<cr>", "Close current buffer"},
-  f = {":Telescope find_files<cr>", "Find Files"},
-  r = {":Telescope live_grep<cr>", "Live grep"},
-  tr = {":Telescope resume<cr>", "Resume Telescope"},
+  ff = {":Telescope find_files<cr>", "Find Files"},
+  fg = {":Telescope live_grep<cr>", "Live grep"},
+  fb = {":Telescope buffers<cr>", "Buffers"},
+  fr = {":Telescope resume<cr>", "Resume Telescope"},
 
   -- lsp
   gr = {"<cmd>lua vim.lsp.buf.references()<cr>", "References"},
