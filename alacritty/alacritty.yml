@@ -3,3 +3,5 @@ window:
 font:
   normal:
     family: Hack Nerd Font
+env:
+  TERM: xterm-256color
