@@ -8,6 +8,7 @@ local mappings = {
   fg = {":Telescope live_grep<cr>", "Live grep"},
   fb = {":Telescope buffers<cr>", "Buffers"},
   fr = {":Telescope resume<cr>", "Resume Telescope"},
+  gs = {":Telescope git_status<cr>", "Git Status"},
 
   -- lsp
   gr = {"<cmd>lua vim.lsp.buf.references()<cr>", "References"},
