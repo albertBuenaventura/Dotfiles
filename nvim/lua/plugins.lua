@@ -59,15 +59,15 @@ return require('packer').startup(function(use)
   -- use 'folke/tokyonight.nvim'
   -- use 'sainnhe/sonokai'
   use {
-	  "catppuccin/nvim",
-	  as = "catppuccin",
-	  config = function()
-		  require("catppuccin").setup({
-        flavour = "macchiato", -- latte, frappe, macchiato, mocha
-        transparent_background = true
-      })
-		  vim.api.nvim_command "colorscheme catppuccin"
-	  end
+	"catppuccin/nvim",
+	as = "catppuccin",
+	config = function()
+		require("catppuccin").setup({
+        		flavour = "macchiato", -- latte, frappe, macchiato, mocha
+        		transparent_background = true
+      		})
+	vim.api.nvim_command "colorscheme catppuccin"
+	end
   }
 
   use 'folke/which-key.nvim'
@@ -75,6 +75,18 @@ return require('packer').startup(function(use)
   use 'ggandor/lightspeed.nvim'
 
   use "terrortylor/nvim-comment"
+
+  
+  use {
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use default
+	  })
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   --
   --
