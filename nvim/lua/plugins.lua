@@ -87,6 +87,15 @@ return require('packer').startup(function(use)
     end
   }
 
+  use {
+    "m4xshen/autoclose.nvim",
+    config = function()
+        require("autoclose").setup({
+            -- Configuration here, or leave empty to use default
+	  })
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   --
   --
