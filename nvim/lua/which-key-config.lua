@@ -10,6 +10,7 @@ local mappings = {
   fg = {":Telescope live_grep<cr>", "Live grep"},
   fb = {":Telescope buffers<cr>", "Buffers"},
   fr = {":Telescope resume<cr>", "Resume Telescope"},
+  fo = {":Telescope oldfiles<cr>", "Previously Open Files"},
   gs = {":Telescope git_status<cr>", "Git Status"},
 
   -- lsp
