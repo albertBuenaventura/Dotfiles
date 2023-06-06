@@ -7,6 +7,7 @@ local mappings = {
 
   -- Telescope
   ff = {":Telescope find_files<cr>", "Find Files"},
+  fh = {":Telescope find_files hidden=true follow=true no_ignore=true<cr>", "Find Files with hidden"},
   fg = {":Telescope live_grep<cr>", "Live grep"},
   fb = {":Telescope buffers<cr>", "Buffers"},
   fr = {":Telescope resume<cr>", "Resume Telescope"},
