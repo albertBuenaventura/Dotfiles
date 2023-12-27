@@ -96,6 +96,7 @@ return require('packer').startup(function(use)
     end
   }
 
+  use 'github/copilot.vim'
   -- Automatically set up your configuration after cloning packer.nvim
   --
   --
